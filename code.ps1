@@ -104,3 +104,8 @@ $diagram += "`n|caption = bis Artikel $($countTable1)/$($countTable2)
 
 #Diagram in Zwischenablage kopieren
 $diagram | set-clipboard
+
+
+write-host "`n`nBerechnung abgeschlossen!" -ForegroundColor Green
+read-host "`n`nBeenden mit Enter"
+exit
