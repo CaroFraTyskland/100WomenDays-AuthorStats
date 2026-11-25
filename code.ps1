@@ -9,6 +9,7 @@ function getStatsToTable ($table) {
 
     foreach ($entry in $entries) {
         if ($entry.contains('id="Start Biografien"')) { continue }
+        $entry = $entry -replace '(?s)<!--.*?-->', ''
         $lines = $entry -split '\r?\n'
         $lines = $lines | where {-not [string]::IsNullOrWhiteSpace($_) -and $_ -notmatch '^\s*(\{\{anker|\|\}|!)'}
 
