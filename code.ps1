@@ -25,7 +25,7 @@ function getSourceCode () {
   $params = @{
       action        = "query"
       prop          = "revisions"
-      titles        = "Wikipedia:100 Women Days 2026"
+      titles        = "Wikipedia:100 Women Days"
       rvprop        = "content"
       rvslots       = "main"
       format        = "json"
